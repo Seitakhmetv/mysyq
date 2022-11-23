@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/mysyq/static/css/main.f16be1cb.css",
-    "main.js": "/mysyq/static/js/main.0c37db5b.js",
+    "main.js": "/mysyq/static/js/main.d7457449.js",
     "static/media/bg-main.gif": "/mysyq/static/media/bg-main.4987d89cbaaef4ee8f20.gif",
     "static/media/firetrap.gif": "/mysyq/static/media/firetrap.4db23fdc59d2ba72e1b9.gif",
     "static/media/spiketrap.gif": "/mysyq/static/media/spiketrap.423da7699d087701b5c3.gif",
     "index.html": "/mysyq/index.html",
     "main.f16be1cb.css.map": "/mysyq/static/css/main.f16be1cb.css.map",
-    "main.0c37db5b.js.map": "/mysyq/static/js/main.0c37db5b.js.map"
+    "main.d7457449.js.map": "/mysyq/static/js/main.d7457449.js.map"
   },
   "entrypoints": [
     "static/css/main.f16be1cb.css",
-    "static/js/main.0c37db5b.js"
+    "static/js/main.d7457449.js"
   ]
 }
