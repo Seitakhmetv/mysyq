@@ -1,7 +1,7 @@
 import './App.css';
 import Playground from './components/Playground/Playground';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes
 } from "react-router-dom";
