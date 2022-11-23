@@ -1,0 +1,99 @@
+:root {
+    --unchecked: #588dc7;
+    --checked: #004E98;
+  }
+
+.playground-container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #EBEBEB;
+    width: calc(100vw - (100vw - 100%));
+    height: 100vh;
+}
+
+.grid-row{
+    background-color: #ececec;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+
+.cell{
+    background-color: var(--unchecked);
+    margin: 2px;
+    width: 32px;
+    height: 32px;
+}
+
+.cell:hover{
+    background-color: var(--checked);
+}
+
+.firetrap{
+    background-image: url("../../../public/traps/firetrap.gif");
+}
+
+.beartrap{
+    background-image: url("../../../public/traps/beartrap.gif");
+}
+
+.spiketrap{
+    background-image: url("../../../public/traps/spiketrap.gif");
+}
+
+#border{
+    background-color: rgb(186, 76, 76);
+}
+
+/* popus styles */
+
+.popup-content {
+    margin: auto;
+    width: 50%;
+    color: white;
+    padding: 5px;
+}
+.popup-arrow {
+    color: rgb(255, 255, 255);
+}
+[role='tooltip'].popup-content {
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.popup-overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+[data-popup='tooltip'].popup-overlay {
+    background: transparent;
+}
+
+.modal {
+    font-size: 12px;
+  }
+.modal > .header {
+    width: 98%;
+    border-bottom: 1px solid rgb(168, 167, 167);
+    text-align: center;
+    padding: 5px;
+}
+.modal > .content {
+    width: 100%;
+    padding: 10px 5px;
+}
+
+.up{
+    background-image: url("../../../public/cat/up.gif");
+}
+.down{
+    background-image: url("../../../public/cat/down.gif");
+}
+.left{
+    background-image: url("../../../public/cat/left.gif");
+}
+.right{
+    background-image: url("../../../public/cat/right.gif");
+}

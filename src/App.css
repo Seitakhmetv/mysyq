@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+*{
+  margin: 0;
+  font-size: x-large;
+  font-family: 'Odibee Sans', sans-serif;
+}
+
+
 .App {
   text-align: center;
 }
@@ -11,6 +20,15 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.glass{
+  background: rgba(255, 255, 255, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.2px);
+  -webkit-backdrop-filter: blur(9.2px);
+  border: 1px solid rgba(255, 255, 255, 0.11);
 }
 
 .App-header {

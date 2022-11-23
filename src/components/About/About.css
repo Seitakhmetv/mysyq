@@ -1,0 +1,48 @@
+.about-wrapper{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(255,123,150,1) 100%);
+    color: white;
+}
+
+.about-container{
+    padding: 50px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+} 
+
+.sidebar{
+    width: 20vw;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sidebar a{
+    width: 20vw;
+    color: white;
+    text-decoration: none;
+    border-bottom: solid rgb(188, 188, 188);
+}
+
+.box{
+    width: 60%;
+    margin-left: 100px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    text-align: justify;
+}
+
+hr{
+    border: 1px solid rgb(143, 143, 143);
+    width: 90%;
+}
