@@ -79,7 +79,7 @@ export default function Playground(props) {
             setModalStuff({
                 trigger: true, 
                 modalHeader: "Congratulations!", 
-                modalContent: <div>You have caught that cat! <br/><br/> Your reward: ${movesMade*1.34+400} </div>
+                modalContent: <div>You have caught that cat! <br/><br/> Your reward: ${500-movesMade*4} </div>
             })
         }
     }
