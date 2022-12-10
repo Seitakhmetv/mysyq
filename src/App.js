@@ -8,6 +8,8 @@ import {
 import About from './components/About/About';
 import Navbar from './components/Navbar/Navbar';
 import Main from './components/Main/Main';
+import { UserContext } from './components/UserContext';
+import { useState } from 'react';
 
 function App() {
   const gridGen = (width, height) => {
@@ -21,10 +23,13 @@ function App() {
     }
     pregrid[7][7] = 2
     return pregrid
-}
+  }
+
+  const [User, setUser] = useState({"name": "Guest", "score": 0, "history": []})
   
   return (
     <Router>
+      <UserContext.Provider value={[User, setUser]}>
       <div className="navbar">
         <Navbar/>
       </div>
@@ -33,6 +38,7 @@ function App() {
         <Route path='about' element={<About/>}/>
         <Route path='game' element={<Playground grid={gridGen(15, 15)}/>}/>
       </Routes>
+      </UserContext.Provider>
     </Router>
   );
 }

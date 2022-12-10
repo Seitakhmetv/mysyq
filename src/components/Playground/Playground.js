@@ -1,8 +1,11 @@
-import React, { useState, forceUp } from 'react'
+import React, { useState, forceUp, useContext } from 'react'
 import {Popup} from 'reactjs-popup'
+import { UserContext } from '../UserContext'
 import './Playground.css'
 
 export default function Playground(props) {
+    const [User, setUser] = useContext(UserContext)
+
     const initalGrid = props.grid
     const [movesMade, setMovesMade] = useState(0)
     const [grid, setGrid] = useState(initalGrid)
@@ -68,6 +71,8 @@ export default function Playground(props) {
 
         //check for win
         if(catx === 0 || catx === grid.length-1 || caty === 0 || caty === grid.length-1){
+            const originalHistory = User.history
+            setUser({"name": User.name, "score": 0, "history": [...User.history, {"name": User.name, "score": 0}]})
             setModalStuff({
                 trigger: true, 
                 modalHeader: "You Lost!", 
@@ -76,6 +81,7 @@ export default function Playground(props) {
         }
         if(grid[catx][caty+1] + grid[catx][caty-1] + grid[catx-1][caty] + grid[catx+1][caty] === 4)
         {
+            setUser({"name": User.name, "score": 500-movesMade*4, "history": [...User.history, {"name": User.name, "score": 500-movesMade*4}]})
             setModalStuff({
                 trigger: true, 
                 modalHeader: "Congratulations!", 
